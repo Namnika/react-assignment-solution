@@ -1,0 +1,163 @@
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular';
+}
+
+input {
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 100%;
+}
+
+.navbar {
+  background-color: cornsilk;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  display: block;
+}
+
+.navbar-text {
+  margin-top: 20px;
+  padding: auto;
+  display: block;
+  text-align: center;
+  font-size: large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.footer {
+  background-color: cornsilk;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  display: block;
+}
+
+.footer-text {
+  margin-top: 20px;
+  padding: auto;
+  display: block;
+  text-align: center;
+  font-size: large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.main-page {
+  margin-top: 100px;
+  margin-left: 20px;
+  text-align: left;
+  font-size: medium;
+  display: block;
+}
+
+.w-data {
+  display: block;
+  font-size: large;
+  color: darksalmon;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-top: 20px;
+}
+
+.error {
+  font-size: small;
+  margin-top: 7rem;
+  display: block;
+  color: red;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.city-grid {
+  text-align: center;
+  display: grid;
+  gap: 10;
+  height: 300px;
+  margin-bottom: 15rem;
+  width: 80%;
+}
+
+.grid1 {
+  background-color: aquamarine;
+  grid-row: span 1 / span 7;
+}
+.grid2 {
+  background-color: rosybrown;
+  grid-row: span 2 / span 7;
+}
+.grid3 {
+  background-color: rgb(158, 234, 130);
+  grid-row: span 1 / span 7;
+}
+.grid4 {
+  background-color: rgb(255, 221, 127);
+  grid-row: span 2 / span 4;
+}
+.grid5 {
+  background-color: rgb(165, 133, 236);
+  grid-row: span 2 / span 7;
+}
+.grid6 {
+  background-color: rgb(39, 178, 212);
+  grid-row: span 4 / span 7;
+}
+.grid7 {
+  background-color: rgb(255, 127, 206);
+  grid-row: span 3 / span 7;
+}
+.grid8 {
+  background-color: rgb(185, 11, 118);
+  grid-row: span 1 / span 7;
+}
+
+@media screen and (min-width: 600px) {
+  .navbar-text {
+    display: block;
+    margin-top: 20px;
+  }
+  .footer-text {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .city-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
